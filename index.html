@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="js/ydui.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/ydui.flexible.js"></script>
+    <title>首页</title>
+</head>
+<body>
+
+    <div id="header">
+        <h2 class="hb">技术全知道</h2> 
+    </div>
+    
+    <div id="wrapper">
+        <div id="scroller">
+            <div class="xiala" id="xiala">
+                <span class="sn" id="sn">下拉刷新...</span>
+            </div>
+            
+            <div class="box">
+                <div class="bo"> 
+                    <img src="img/rentou.png" class="i1"/>
+                    <div class="box-p">
+                        <p class="p1">质信联盟</p>
+                        <p class="p2">zhixinlianmeng</p>
+                        <p class="p3">新媒体互联网推广平台</p>
+                        <p class="p4">新时代企业、商家、用户互惠互利</p>
+                        <p class="p5">企业高效推广</p>
+                        <p class="p6">用户也能挣钱</p>
+                        <p class="p7">创业者轻松创业</p>   
+                    </div>   
+                </div>
+                <!--第一部分  -->
+                <div class="nr">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/logo.png"/>
+                                <p>微舍</p>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/tuiguang.png"/>
+                                <p>广告推广</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/chahu.png"/>
+                                <p>智能物联</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/gouwudai.png"/>
+                                <p>电商服务</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/maozi.png"/>
+                                <p>营销培训        </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/inzhang.png"/>
+                                <p>文案策划</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/diannao.png"/>
+                                <p>网站设计</p>                        
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/shouji.png"/>
+                                <p>移动开发</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/ui.png"/>
+                                <p>UI设计</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/weixin.png"/>
+                                <p>微信开发</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 第二部分 -->
+                
+                    
+            </div><!--box-->   
+        </div><!--scroller部分-->
+    </div>
+            
+    
+
+    
+    <footer class="m-tabbar .tabbar-fixed ">
+        <a href="index.html" class="tabbar-item">
+            <span class="tabbar-icon">
+                <i class="icon-home-outline"></i>
+            </span>
+            <span class="tabbar-txt">质信联盟</span>
+        </a>
+        <a href="anli.html" class="tabbar-item tabbar-active">
+            <span class="tabbar-icon">
+                <i class="icon-shopcart"></i>
+            </span>
+            <span class="tabbar-txt">案例</span>
+        </a>
+        <a href="zixun.html" class="tabbar-item">
+            <span class="tabbar-icon">
+                <i class="icon-ucenter-outline"></i>
+            </span>
+            <span class="tabbar-txt">咨询</span>
+        </a>
+        <a href="wode.html" class="tabbar-item">
+            <span class="tabbar-icon">
+                <i class="icon-ucenter-outline"></i>
+            </span>
+            <span class="tabbar-txt">我的</span>
+        </a>
+    </footer>
+
+
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script src="js/ydui.js"></script>
+    <script>
+             
+
+        var myScroll,
+        xl, xlOffset,
+        generatedCount = 0;
+    
+        function nmb () {
+        setTimeout(function () {	
+        myScroll.refresh();		
+        }, 1000);}
+
+        function ab() {
+            xl = document.getElementById('xiala');
+            xlOffset = xl.offsetHeight;
+            
+            
+            myScroll = new iScroll('wrapper', {
+
+                scrollbarClass: 'myScrollbar', /* 重要样式 */
+                useTransition: false, /* 此属性不知用意，本人从true改为false */
+
+                topOffset: xlOffset,
+
+                onRefresh: function () {
+                    if (xl.className.match('loading')) {
+                        xl.className = '';
+                        xl.querySelector('.sn').innerHTML = '下拉刷新...';
+                    }
+                },
+
+                onScrollMove: function () {
+                    if (this.y > 5 && !xl.className.match('flip')) {
+                        xl.className = 'flip';
+                        xl.querySelector('.sn').innerHTML = '松手开始更新...';
+                        this.minScrollY = 0;
+                    } else if (this.y < 5 && xl.className.match('flip')) {
+                        xl.className = '';
+                        xl.querySelector('.sn').innerHTML = '下拉刷新...';
+                        this.minScrollY = -xlOffset;
+                    } 
+                },
+                
+                onScrollEnd: function () {
+                    if (xl.className.match('flip')) {
+                        xl.className = 'loading';
+                        xl.querySelector('.sn').innerHTML = '加载中...';				
+                        nmb();	
+                    } 
+                }
+            });
+            
+            setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
+        }
+
+        //初始化绑定iScroll控件 
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        document.addEventListener('DOMContentLoaded', ab, false); 
+
+    </script>
+        
+    
+</body>
+</html>

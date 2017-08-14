@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+input {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 63px; } }
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 69px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px; } }
+html {
+  font-size: 15.625vw; }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px; } }
+body {
+  font-size: 0.1rem; }
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 45px;
+  background: #3698d9;
+  padding: 0;
+  color: #eee;
+  text-align: center; }
+  #header .hb {
+    color: #fff;
+    text-align: center;
+    font-size: 0.36rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.15rem;
+    background: #3698d9;
+    width: 100%; }
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  background: #555;
+  overflow: auto; }
+
+#scroller {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0; }
+
+#xiala {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 14px;
+  color: #888; }
+
+.box {
+  background: #fff; }
+  .box .bo {
+    display: flex;
+    background: #3698d9;
+    padding-top: 0.2rem; }
+    .box .bo .i1 {
+      margin-left: 0.2rem;
+      width: 30%;
+      height: 60%; }
+    .box .bo .box-p {
+      width: 70%;
+      text-align: center; }
+      .box .bo .box-p p {
+        color: #fff; }
+      .box .bo .box-p .p1 {
+        font-size: 0.34rem; }
+      .box .bo .box-p .p3 {
+        font-size: 0.34rem;
+        margin-bottom: 0.25rem; }
+      .box .bo .box-p .p5, .box .bo .box-p .p6, .box .bo .box-p .p7 {
+        width: 32%;
+        font-size: 0.1rem;
+        display: inline-block;
+        margin-top: 0.25rem;
+        background: #368ed1;
+        border-radius: 0.1rem; }
+  .box .nr {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem; }
+    .box .nr ul {
+      display: flex;
+      flex-wrap: wrap; }
+      .box .nr ul li {
+        margin: 0.2rem 0.22rem 0;
+        width: 12%; }
+        .box .nr ul li img {
+          width: 100%; }
+        .box .nr ul li p {
+          text-align: center; }
+  .box .yao {
+    display: flex;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 0.26rem; }
+    .box .yao .yaop1 {
+      width: 30%;
+      border-right: 1px solid #ccc; }
+      .box .yao .yaop1 a {
+        color: #3698d9; }
+    .box .yao .yaop2 {
+      width: 70%;
+      height: 0.4rem;
+      overflow: hidden; }
+      .box .yao .yaop2 ul li {
+        height: 0.4rem;
+        padding-left: 0.15rem; }
+  .box .tup {
+    padding: 0.2rem 0;
+    background: #f4f4f4; }
+    .box .tup img {
+      width: 100%; }
+  .box .lb {
+    display: flex;
+    text-align: center; }
+    .box .lb a {
+      width: 33.33%;
+      font-size: 0.26rem;
+      color: #000;
+      padding: 0.25rem 0; }
+      .box .lb a span {
+        color: #9f9f9f;
+        font-size: 0.2rem; }
+    .box .lb .lba2 {
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee; }
+  .box .lb2 {
+    display: flex;
+    text-align: center;
+    border-top: 1px solid #eeeeee; }
+    .box .lb2 a {
+      width: 50%;
+      font-size: 0.26rem;
+      color: #000;
+      padding: 0.35rem 0 0.25rem; }
+      .box .lb2 a span {
+        color: #9f9f9f;
+        font-size: 0.2rem; }
+    .box .lb2 .lb2a {
+      border-right: 1px solid #eeeeee; }
+  .box .yaobu {
+    padding: 0.2rem 0;
+    background: #f4f4f4; }
+    .box .yaobu .turuqilaide {
+      background: #fff;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 0.28rem;
+      padding: 0.2rem 0 0.2rem 0.25rem; }
+    .box .yaobu .wutu {
+      display: flex; }
+      .box .yaobu .wutu a {
+        width: 20%; }
+        .box .yaobu .wutu a img {
+          width: 100%;
+          height: 100%; }
+  .box .zz {
+    display: flex;
+    flex-wrap: wrap; }
+    .box .zz a {
+      width: 49%; }
+      .box .zz a img {
+        width: 100%; }
+    .box .zz .zza1 {
+      border-bottom: 1px solid #eeeeee; }
+    .box .zz .zza2 {
+      border-left: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee; }
+    .box .zz .zza4 {
+      border-left: 1px solid #eeeeee; }
+  .box .xx {
+    display: flex;
+    padding-top: 0.2rem;
+    background: #f4f4f4;
+    border-bottom: 2px solid #eeeeee; }
+    .box .xx p {
+      width: 100%;
+      background: #fff;
+      font-size: 0.28rem;
+      padding: 0.25rem 0 0.25rem 0.35rem; }
+  .box .cc {
+    display: flex; }
+    .box .cc a {
+      width: 33.33%; }
+      .box .cc a img {
+        width: 100%; }
+    .box .cc .cca {
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee; }
+  .box .vv {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 0.2rem 0; }
+    .box .vv .vva {
+      font-size: 0.28rem;
+      background: #fff;
+      padding: 0.25rem 0.3rem;
+      border-bottom: 1px solid #eeeeee; }
+      .box .vv .vva p {
+        display: inline-block; }
+      .box .vv .vva a {
+        float: right; }
+    .box .vv .vvb {
+      display: flex;
+      flex-direction: column;
+      background: #fff; }
+      .box .vv .vvb .ttj {
+        width: 100%;
+        overflow: hidden; }
+        .box .vv .vvb .ttj .tianjia {
+          width: 1000%; }
+          .box .vv .vvb .ttj .tianjia .vvba {
+            width: 10%;
+            padding-top: 0.4rem;
+            padding-bottom: 0.1rem;
+            float: left; }
+            .box .vv .vvb .ttj .tianjia .vvba img {
+              width: 26.5%;
+              margin-left: 0.3rem; }
+            .box .vv .vvb .ttj .tianjia .vvba .vvbaa {
+              display: inline-block;
+              width: 63.5%;
+              margin-left: 0.1rem; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaaa p:nth-child(1) {
+                font-size: 0.28rem;
+                display: inline-block; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaaa p:nth-child(2) {
+                font-size: 0.28rem;
+                display: inline-block;
+                background: red;
+                margin-left: 0.35rem;
+                border-radius: 0.05rem; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaaa p:nth-child(3) {
+                font-size: 0.22rem;
+                display: inline-block;
+                color: #9f9f9f;
+                float: right; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaab {
+                font-size: 0.24rem;
+                color: #9f9f9f;
+                padding: 0.25rem 0; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaac p {
+                display: inline-block;
+                float: right; }
+              .box .vv .vvb .ttj .tianjia .vvba .vvbaa .vvbaac a {
+                color: #41a5ff;
+                border: 1px solid #41a5ff; }
+      .box .vv .vvb .vvbb {
+        padding-left: 10%; }
+        .box .vv .vvb .vvbb a {
+          width: 0.1rem;
+          height: 0.1rem;
+          background: #d9d9d9;
+          float: left;
+          margin: 0.3rem 0.2rem;
+          border-radius: 0.05rem; }
+        .box .vv .vvb .vvbb .dada {
+          background: red; }
+  .box .bb .bba {
+    font-size: 0.28rem;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.2rem 0 0.2rem 0.3rem; }
+  .box .bb .bbb {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.3rem; }
+    .box .bb .bbb img {
+      width: 30%;
+      height: 85%; }
+    .box .bb .bbb .bbba {
+      width: 63.5%;
+      margin-left: 0.1rem; }
+      .box .bb .bbb .bbba p:nth-child(1) {
+        font-size: 0.25rem; }
+      .box .bb .bbb .bbba p:nth-child(2) {
+        display: inline-block;
+        font-size: 0.25rem;
+        color: #ff7e25;
+        padding-top: 0.35rem;
+        padding-bottom: 0.2rem; }
+      .box .bb .bbb .bbba p:nth-child(3) {
+        display: inline-block;
+        font-size: 0.15rem;
+        color: #fff;
+        background: #31c27c;
+        margin-left: 0.05rem;
+        border-radius: 0.05rem; }
+      .box .bb .bbb .bbba p:nth-child(4) {
+        font-size: 0.22rem;
+        color: #d3d3d3;
+        text-align: right; }
+
+.m-tabbar {
+  bottom: 0;
+  position: fixed; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+    border: 0;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+body{
+    font-size: 0.01rem;
+}
+
+.denglu-header{
+    display: flex;
+    padding: 0.25rem 0.3rem;
+    background: #3698d9;
+    p{  
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 0.36rem;
+    }
+}
+
+.yema{
+    margin:0 0.2rem;
+    border-bottom:1px solid #eeeeee;
+    p{
+        font-size: 0.3rem;
+        padding: {
+            top:0.5rem;
+            bottom:0.4rem;
+        }
+        span{
+            color: red;
+        }
+    }
+    input{
+        width: 100%;
+        font-size: 0.26rem;
+        color: #d0d0d0; 
+        margin-bottom: 0.2rem;
+        border: 0;
+    }
+}
+
+.zixundiv{
+    display: flex;
+    padding: 0 0.2rem;
+    div{
+        width: 50%;
+        p{
+            font-size: 0.3rem;
+            padding: {
+                top:0.5rem;
+                bottom:0.4rem;
+            }
+            span{
+                color: red;
+            }
+        }
+        input{
+            width: 100%;
+            font-size: 0.26rem;
+            color: #999999;
+            padding-bottom:0.1rem; 
+            border-bottom:1px solid #eeeeee;   
+        }
+    }
+    .zixundiv1{
+        margin-right: 0.3rem;
+    }
+}
+
+.yemasss{
+    margin:0 0.2rem;
+    border-bottom:1px solid #eeeeee;
+    p:nth-child(1){
+        font-size: 0.3rem;
+        padding: {
+            top:0.5rem;
+            bottom:0.4rem;
+        }
+        span{
+            color: red;
+        }
+    }
+    p:nth-child(2){
+        font-size: 0.3rem;
+        color: #d0d0d0; 
+        padding-bottom: 0.6rem;
+        span{
+            color: red;
+        }
+    }
+    input{
+        width: 100%;
+        font-size: 0.26rem;
+        color: #d0d0d0; 
+        margin-bottom: 0.2rem;
+        border: 0;
+    }
+}
+.anniu-box{
+    padding: 0.8rem 0.2rem;
+    display: flex;
+    .anniu{
+        width: 100%;
+        background: #3698d9;
+        border: 0;
+        font-size: 0.3rem;
+        color: #fff;
+        padding: 0.2rem 0;
+        border-radius: 0.05rem;
+        
+    }   
+}
+
+
+.sanp{
+    display: flex;
+    p{
+        width: 33.33%;
+        text-align: center;
+        font-size: 0.26rem;
+    }
+    p:nth-child(1),p:nth-child(3){
+        border-top:2px solid #eeeeee;
+        margin-top: 0.2rem;
+    }
+}
+
+.weiq{
+    display: flex;
+    padding: 0.6rem 0.2rem 1.8rem; 
+    .weiqa{
+        width: 50%;
+        font-size: 0.26rem;
+        a{
+            text-align: center;
+            img{
+                width: 35%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.nn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.65rem;
+    background: #fff;
+    padding: {
+        top:0.15rem;
+        bottom: 0.1rem;
+        left: 7%;
+    }
+    border-top: 2px solid #eeeeee;
+    a{  
+        display: inline-block;
+        width: 22%;
+        text-align: center;
+        font-size: 0.22rem;
+        img{
+            width: 20%;
+        }
+    }
+}
+
+.xiala{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom:0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    .xialade{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        input{
+            width: 43%;
+            float: left;
+            padding: 0.2rem;
+            color: #999999;
+        }
+        input:nth-child(2){
+            text-align: right;
+            color: #5eafff;
+        }
+        select{
+            width: 100%;
+        }
+    }
+
+}

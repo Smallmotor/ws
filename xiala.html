@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+</head>
+<body>
+    <div id="header">
+        <h2 class="hb">技术全知道</h2> 
+    </div>
+    <div id="wrapper">
+        <div id="scroller">
+            <div class="xiala" id="xiala">
+                <span class="sn" id="sn">下拉刷新...</span>
+            </div>
+            
+            <div class="zuidada">
+            </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="iscroll.js"></script>
+    <script type="text/javascript">
+    
+    for (var i = 0;i<10;i++){
+        $($(".tianjia").find("li")[i]).attr("index",i)
+    }    
+   
+    function ab(){
+        var juli = $(".ttj").width();
+        var juli1= $(".yaop2").height();
+        
+        setInterval(function(){
+        
+                $(".tianjia").animate({
+                    marginLeft:-juli+"px",
+                },1000,function(){
+                    $(this).css({
+                    marginLeft:0,   
+                }).find("li:first")
+                .appendTo(this);
+                var ss = $(this).find("li:first").attr("index")
+                var dd = $($(".vvbb").children("a")[ss])
+                dd.css({
+                    background:"red",
+                })
+                dd.siblings().css({
+                    background:"#d9d9d9",
+                }) 
+                });
+           
+                $(".yaop2a").animate({
+                    marginTop:-juli1+"px",
+                },1000,function(){
+                    $(this).css({
+                        marginTop:0,   
+                    }).find("li:first").appendTo(this);  
+                });         
+        },5000)
+    }
+    ab();    
+    
+    var myScroll,
+	        xl, xlOffset,
+	        generatedCount = 0;
+
+        
+            
+            function nmb () {
+	        setTimeout(function () {	
+		    myScroll.refresh();		
+	        }, 1000);}
+
+            function ab() {
+                xl = document.getElementById('xiala');
+                xlOffset = xl.offsetHeight;
+                
+                
+                myScroll = new iScroll('wrapper', {
+
+                    scrollbarClass: 'myScrollbar', /* 重要样式 */
+                    useTransition: false, /* 此属性不知用意，本人从true改为false */
+
+                    topOffset: xlOffset,
+
+                    onRefresh: function () {
+                        if (xl.className.match('loading')) {
+                            xl.className = '';
+                            xl.querySelector('.sn').innerHTML = '下拉刷新...';
+                        }
+                    },
+
+                    onScrollMove: function () {
+                        if (this.y > 5 && !xl.className.match('flip')) {
+                            xl.className = 'flip';
+                            xl.querySelector('.sn').innerHTML = '松手开始更新...';
+                            this.minScrollY = 0;
+                        } else if (this.y < 5 && xl.className.match('flip')) {
+                            xl.className = '';
+                            xl.querySelector('.sn').innerHTML = '下拉刷新...';
+                            this.minScrollY = -xlOffset;
+                        } 
+                    },
+                    
+                    onScrollEnd: function () {
+                        if (xl.className.match('flip')) {
+                            xl.className = 'loading';
+                            xl.querySelector('.sn').innerHTML = '加载中...';				
+                            nmb();	
+                        } 
+                    }
+                });
+                
+                setTimeout(function () { document.getElementById('wrapper').style.left = '0'; }, 800);
+            }
+
+            //初始化绑定iScroll控件 
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+            document.addEventListener('DOMContentLoaded', ab, false); 
+    </script>
+</body>
+</html>                 

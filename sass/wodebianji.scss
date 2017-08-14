@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+    border: 0;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+body{
+    font-size: 0.01rem;
+}
+
+.zhuce-header{
+    display: flex;
+    background: #3698d9;
+    padding: 0.25rem 0.2rem ;
+    justify-content:space-between;
+    .a1{
+        width: 3%;
+        display: inline-block;
+        img{
+            width: 100%;
+            margin-top: 0.05rem;
+        }
+    }
+    p{
+        display: inline-block;
+        color: #fff;
+        font-size: 0.36rem;
+        margin-left: 5%;
+    }
+    .a2{
+        float: right;
+        font-size: 0.3rem;
+        color: #fff;
+        text-align: right;
+        background: 0;
+        border: 0;
+    }
+}
+
+.mm{
+    padding: 0 0.2rem;
+    .mma{
+        display: flex;
+        justify-content:space-between;
+        border-bottom: 2px solid #eeeeee; 
+        
+        p{  
+            width: 40%;
+            font-size: 0.3rem;
+            padding: {
+                top:0.45rem;
+                bottom: 0.35rem;
+            }
+        }
+        a{
+            padding-top: 0.35rem;
+            line-height: 0.65rem;
+            font-size: 0.3rem;
+            img{
+                float: right;
+            }
+            .img1{
+                width: 6%;
+                margin-top: 0.1rem;
+                margin-left: 0.2rem;
+            }
+            .img2{
+                width: 20%;
+            }
+        }
+        
+
+    }
+}
+
+.nn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.65rem;
+    background: #fff;
+    padding: {
+        top:0.15rem;
+        bottom: 0.1rem;
+        left: 7%;
+    }
+    border-top: 2px solid #eeeeee;
+    a{  
+        display: inline-block;
+        width: 22%;
+        text-align: center;
+        font-size: 0.22rem;
+        img{
+            width: 20%;
+        }
+    }
+}
+
+.zhaozi{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    .xuanxiang{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        input{
+            width: 100%;
+            font-size: 0.3rem;
+            background: #fff;
+            padding: 0.35rem 0;
+            color: #3badfc;
+
+        }
+        input:nth-child(1){
+            color: #fc5a57;
+            border-bottom: 1px solid #979797;
+        }
+        input:nth-child(2){
+            border-bottom: 10px solid #dbdbdb
+        }
+        input:nth-child(3){
+            border-top: 1px solid #979797
+        }
+    }
+}
+

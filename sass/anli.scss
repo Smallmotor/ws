@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 63px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 69px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 75px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+body{
+    font-size: 0.01rem;
+}
+
+.denglu-header{
+    display: flex;
+    padding: 0.25rem 0.3rem;
+    background: #3698d9;
+    a{  
+        width: 3%;
+        display: inline-block;
+        margin-top: 0.05rem; 
+        img{
+            width: 100%;
+            
+        }
+    }
+    p{  
+        display: inline;
+        margin-left: 40.7%;
+        color: #fff;
+        font-size: 0.36rem;
+    }
+}
+
+.anliul{
+    margin: {
+        left: 0.1rem;
+        top:0.1rem;
+    }
+    ul li{
+        width: 48%;
+        float: left;
+        margin-right: 0.1rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+.nn{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.65rem;
+    background: #fff;
+    padding: {
+        top:0.15rem;
+        bottom: 0.1rem;
+        left: 7%;
+    }
+    border-top: 2px solid #eeeeee;
+    a{  
+        display: inline-block;
+        width: 22%;
+        text-align: center;
+        font-size: 0.22rem;
+        img{
+            width: 20%;
+        }
+    }
+}
